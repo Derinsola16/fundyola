@@ -16,12 +16,10 @@
         </div>
       </form>
       <router-link to="/cart">
-        <div class="">
-          <font-awesome-icon
-            :icon="['fas', 'shopping-cart']"
-            size="lg"
-            class="link"
-          />
+        <div>
+          <i class="fas fa-shopping-cart link" size="lg"></i>
+          <span class="badge badge-warning">90</span>
+          <!-- <Badge text="11"/> -->
         </div>
       </router-link>
     </header>
@@ -30,7 +28,10 @@
 
 <script>
 export default {
-  name: "Home"
+  name: "Header",
+  components: {
+    // Badge: () => import("./Badge.vue")
+  }
 };
 </script>
 
@@ -81,6 +82,16 @@ export default {
   .link {
     color: #484848;
     font-size: 25px;
+  }
+
+  .badge {
+    font-size: 10px !important;
+    position: relative !important;
+    top: 0.2rem !important;
+    left: -2.2rem !important;
+    border-radius: 90% !important;
+    background-color: #ffb300 !important;
+    color: #ffffff !important;
   }
 }
 </style>

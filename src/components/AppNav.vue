@@ -2,26 +2,54 @@
   <footer id="app-nav">
     <div class="d-flex justify-content-between">
       <div class="icons">
-        <router-link to="/" class="link">
+        <router-link
+          to="/"
+          class="link"
+          :class="{
+            'filled ': true,
+            'active ': currentRoute == 'home'
+          }"
+        >
           <font-awesome-icon :icon="['fas', 'home']" size="lg" />
         </router-link>
       </div>
 
       <div class="icons">
-        <router-link to="/category" class="link">
+        <router-link
+          to="/category"
+          class="link"
+          :class="{
+            'filled ': true,
+            'active ': currentRoute == 'category'
+          }"
+        >
           <font-awesome-icon :icon="['far', 'list-alt']" size="lg" />
         </router-link>
       </div>
 
       <div class="icons">
-        <router-link to="/search" class="link">
-          <font-awesome-icon :icon="['fas', 'search']" size="lg" />
+        <router-link
+          to="/profile"
+          class="link"
+          :class="{
+            'filled ': true,
+            'active ': currentRoute == 'profile'
+          }"
+        >
+          <font-awesome-icon :icon="['fas', 'user']" size="lg" />
         </router-link>
       </div>
 
       <div class="icons">
-        <router-link to="/profile" class="link">
-          <font-awesome-icon :icon="['fas', 'user']" size="lg" />
+        <router-link
+          to="/search"
+          class="link"
+          :class="{
+            'filled ': true,
+            'active ': currentRoute == 'search'
+          }"
+        >
+          <font-awesome-icon :icon="['fas', 'bars']" size="lg" />
         </router-link>
       </div>
     </div>
@@ -31,9 +59,12 @@
 <script>
 export default {
   name: "app-nav",
+  data() {
+    return {};
+  },
   computed: {
     currentRoute() {
-      return this.$route.name();
+      return this.$route.name;
     }
   }
 };
@@ -56,8 +87,9 @@ export default {
     padding: 10px;
     text-align: center;
 
-    .active {
-      color: #096dd9;
+    .link.active {
+      color: #ffb300;
+      font-size: 16px;
     }
 
     .link {
