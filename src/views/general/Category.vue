@@ -1,4 +1,4 @@
-ale<template>
+<template>
   <main class="category">
     <Search />
     <div class="container">

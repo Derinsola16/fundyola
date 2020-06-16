@@ -133,12 +133,14 @@ h6 {
   color: color(bv-grey-900) !important;
 }
 
+
+
 /**
  * Background Colors
  */
 
 .bg-primary {
-  background-color: color(bv-primary) !important;
+  background-color: #FFB300 !important;
 }
 
 .bg-success {
@@ -253,6 +255,22 @@ h6 {
 Text weight
  */
 
+ .text-xs {
+  font-size: 0.7rem;
+}
+
+.text-sm {
+  font-size: 0.8rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.1rem;
+}
+
 .text {
   &-bold {
     font-weight: 600 !important;
@@ -279,6 +297,9 @@ Text weight
   }
 
 }
+
+// Cards
+
 
 /*** Avatar ************** */
 
