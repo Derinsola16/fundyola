@@ -40,6 +40,30 @@
             <p>Gowns</p>
           </div>
         </div>
+        <div class="image-wrapper">
+          <div class="mini-card">
+            <img src="@/assets/image1.png" alt="" />
+            <p>Gowns</p>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <div class="mini-card">
+            <img src="@/assets/image1.png" alt="" />
+            <p>Gowns</p>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <div class="mini-card">
+            <img src="@/assets/image1.png" alt="" />
+            <p>Gowns</p>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <div class="mini-card">
+            <img src="@/assets/image1.png" alt="" />
+            <p>Gowns</p>
+          </div>
+        </div>
       </div>
     </div>
   </main>
